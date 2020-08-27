@@ -39,8 +39,8 @@ $medewerkers = [
 /*  De medewerkers-array heeft nu meerdere arrays. */
 
 
-for ($x = 0; $x <= 5; $x++) {
-    echo $medewerkers[0]['voornaam'] . " " . $medewerkers[0]['achternaam'] . " " . "is" . " " . $medewerkers[0]['functie'] . "<br>";
+for ($x = 0; $x <= 4; $x++) {
+    echo $medewerkers[$x]['voornaam'] . " " . $medewerkers[$x]['achternaam'] . " " . "is" . " " . $medewerkers[$x]['functie'] . "<br>";
   }
 ?>
 </body>
