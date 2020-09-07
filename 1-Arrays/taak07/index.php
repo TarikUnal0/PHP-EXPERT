@@ -49,7 +49,7 @@
             [
                 'titel' => 'Frenkie De Jong scoort drie keer',
                 'beschrijving' => 'Nullam cursus cursus lorem vel ultrices. In congue, dui sed volutpat posuere, lorem nisi varius eros, vel dapibus quam est vitae mi. Ut et nulla a est laoreet efficitur. Cras accumsan urna libero, in interdum sapien molestie et. Aliquam in magna augue. Vivamus venenatis bibendum nisi id bibendum. Nulla et mi mi.',
-                'image' => 'images/frenkie01.jpg'
+                'image' => 'images/frenkie01.jpg' 
 
             ]
         ],
@@ -76,8 +76,18 @@
 
     ];
 
-    foreach ($nieuwsberichten as $value) {
-        echo $nieuwsberichten['Amsterdam']['bechrijving'];
+    foreach($nieuwsberichten as $bericht){
+        echo  "<h1>" . $nieuwsberichten['0'] . "</h1>";
+        echo  '<div class="content">';
+        echo       '<h2 class="title">' . $bericht[0]['titel'] .'</h2>';
+        echo       '<p class="title">' . $bericht[0]['beschrijving'] .'</p>';
+        echo     '<img src="' .  $bericht[0]['image'] . '" class="title">';
+        echo       '<h2 class="title">' . $bericht[1]['titel'] .'</h2>';
+        echo       '<p class="title">' . $bericht[1]['beschrijving'] .'</p>';
+        echo     '<img src="' .  $bericht[1]['image'] . '" class="title">';
+        echo  "</div>";
+        }; foreach($nieuwsberichten as $nieuwsbericht) {
+        echo $nieuwsbericht['Amsterdam']['Titel'];
     }
     ?>
     
@@ -85,7 +95,7 @@
 
     <h1></h1>
     <div class="content">
-
+        
         <h2 class="title"></h2>
         <p class="title"></p>
         <img src="" class="title">
