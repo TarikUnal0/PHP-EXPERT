@@ -17,7 +17,7 @@ function checkInhoud(){
 $piaggio = new scooter;
 $piaggio->kleur = 'rood';
 $piaggio->merk = 'piaggio';
-$piaggio->inhoudTank = '6';
+$piaggio->inhoudTank = '100';
 
 
 $peugeot = new scooter;
