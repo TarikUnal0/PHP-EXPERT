@@ -36,8 +36,8 @@ De voetbalclub moet een administratiesysteem hebben van wie in welk team speelt 
 - [ ] Zet zelf bedachte gegevens in deze tabel.
 
 - [ ] Maak een database bestand: db.conn.php
-- [ ] Maak een pagina om alle leden te kunnen tonen (overzichtspagina met een tabel)
-- [ ] Maak een pagina om teams te kunnen bekijken   (overzichtspagina met een tabel)
+- [x] Maak een pagina om alle leden te kunnen tonen (overzichtspagina met een tabel)
+- [x] Maak een pagina om teams te kunnen bekijken   (overzichtspagina met een tabel)
 - [ ] Maak een pagina om de gegevens van een enkele gebruiker te kunnen tonen (overzicht van een enkele rij)
 - [ ] Maak een pagina om de gegevens van een enkel team te kunnen tonen       (overzicht van een enkele rij)
 - [ ] Maak op elke regel van de eerder gemaakte tabellen een link waarmee je de rij kunt verwijderen
