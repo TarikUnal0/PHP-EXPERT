@@ -6,19 +6,14 @@
     <title>Document</title>
 </head>
 <body>
-<style> *{
-    font-family: arial;
-}
+<style> 
 table,tr,td{
-    border: solid black 1px;
-    border-collapse: collapse;
+    border: solid black 1px;  
 }
-li{
-    list-style: none;
-}
+
 </style>
 <div class="menu">
-  <a href="db.conn.php" class="active">Home</a>
+  <a href="index.php">Home</a>
   <a href="leden.php">Leden</a>
   <a href="teams.php">Teams</a>
   <a href="#">Link 3</a>
@@ -26,12 +21,7 @@ li{
 </div>
 <table>
 <?php
-$db_loc = 'localhost';
-$db_name = 'voetbalclubasd';
-$db_user = 'root';
-$db_pw = '';
-
-$db_conn = new PDO("mysql:host=$db_loc;dbname=$db_name", $db_user, $db_pw);
+include "dbconn.php";
 
 $sql = "SELECT * FROM gebruikers";
 $statement = $db_conn->prepare($sql); //haal alle gebruikers op uit de database toolsforever
@@ -55,3 +45,4 @@ email = " . $rows['email'] ."</td><td>".
 </table>
 </body>
 </html>
+

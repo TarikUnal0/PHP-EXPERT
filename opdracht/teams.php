@@ -6,15 +6,9 @@
     <title>Document</title>
 </head>
 <body>
-<style> *{
-    font-family: arial;
-}
+<style>
 table,tr,td{
     border: solid black 1px;
-    border-collapse: collapse;
-}
-li{
-    list-style: none;
 }
 </style>
 <div class="menu">
@@ -26,17 +20,13 @@ li{
 </div>
 <table>
 <?php
-$db_loc = 'localhost';
-$db_name = 'voetbalclubasd';
-$db_user = 'root';
-$db_pw = '';
-
-$db_conn = new PDO("mysql:host=$db_loc;dbname=$db_name", $db_user, $db_pw);
+include "dbconn.php";
 
 $sql = "SELECT * FROM teams";
 $statement = $db_conn->prepare($sql); //haal alle gebruikers op uit de database toolsforever
 $statement->execute();
 $database_gegevens = $statement->fetchAll(PDO::FETCH_ASSOC);
+
 
 foreach($database_gegevens as $rows){$idname = $rows['id'];       
 echo "<tr>". "<td> ID: ".$rows['id'] . "</td><td>
